@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Live Video Streaming</title>
+
+    <style>
+      * {
+        padding: 0rem;
+        margin: 0rem;
+        box-sizing: border-box;
+      }
+
+      .flex-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .video_img {
+        width: fit-content;
+        height: fit-content;
+        transform: rotate(90deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-box">
+      <img
+        class="video_img"
+        src="{{ url_for('video_feed') }}"
+        alt="Live Video Stream"
+      />
+    </div>
+  </body>
+</html>
