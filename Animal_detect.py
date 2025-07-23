@@ -38,7 +38,7 @@ def detection():
 
     labelsPath = "./yolo-coco/coco.names"
     LABELS = open(labelsPath).read().strip().split("\n")
-    final_classes = ['dog', 'sheep', 'horse', 'cow', 'elephant', 'zebra', 'bear', 'giraffe', 'monkey']
+    final_classes = ['sheep', 'horse', 'cow', 'elephant', 'zebra', 'bear', 'giraffe', 'monkey']
 
     weightsPath = os.path.abspath("./yolo-coco/yolov3-tiny.weights")
     configPath = os.path.abspath("./yolo-coco/yolov3-tiny.cfg")

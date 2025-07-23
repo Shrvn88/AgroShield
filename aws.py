@@ -4,9 +4,7 @@ def send_aws(image_file_path):
     file_name = image_file_path[-23:]
     
 # Set your AWS credentials and region
-    aws_access_key_id = 'AKIAW3MECJHDGVMQ2NNC'
-    aws_secret_access_key = 'mPhHUjFJ5kCbiDs4POYTNx0TbTXVOPM3rP+owdrw'
-    aws_region = 'ap-south-1'
+    
 
 # Initialize an S3 client
     s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key, region_name=aws_region)
